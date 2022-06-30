@@ -12,3 +12,9 @@ def fibonnaci number
   end
   default_series[number]
 end
+
+#second solution caame in my mind for recursive function.
+def fibonacci( number )
+  return  number  if ( 0..1 ).include? number
+  ( fibonacci( number - 1 ) + fibonacci( number - 2 ) )
+end
